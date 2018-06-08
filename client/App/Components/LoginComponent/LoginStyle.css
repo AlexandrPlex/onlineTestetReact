@@ -1,0 +1,68 @@
+.container-login{
+    margin: 10% auto 0 auto;
+    display: block;
+    height: 300px;
+    width: 60%;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0,0,0,.6);
+    border-radius: 5px;
+    word-break: break-all;
+    background: rgba(0,0,0, 0.4);
+    max-width: 440px;
+}
+
+html,body{
+    height: 100%;
+    background: linear-gradient(30grad , #26d01d ,
+                                         #2cbbab ) no-repeat;
+}
+.container-login * {
+    margin: auto;
+}
+.container-login input{
+    display: block;
+}
+.container-login input[type="text"], input[type="password"]{
+    width: 90%;
+    margin: 25px 5%;
+    border-radius: 5px;
+    height: 40px;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.container-login input[type="submit"] {
+    width: 40%;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 5px;
+    background: round;
+    border: 10px;
+}
+.container-login input[type="submit"] {
+    box-sizing: border-box;
+    max-width: 200px;
+    background: #fff; /* запасной цвет для старых браузеров */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.container-login input[type="submit"]:hover {
+    background: rgba(255, 255, 255, 0.7);
+    transition: all 0.5s ease-out;
+}
+.a-rigth{
+    float: right;
+    padding-right: 5%;
+}
+.a-left{
+    float: left;
+    padding-left: 5%;
+}
+
+.container-login a:hover{
+    background: rgba(255, 255, 255, 0.7);
+    transition: all 0.7s ease-out;
+    border-radius: 5px;
+
+}

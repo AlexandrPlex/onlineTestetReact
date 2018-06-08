@@ -21,7 +21,8 @@
         "eofline": true,
         "indent": [
             true,
-            "spaces"
+            "tabs",
+            4
         ],
         "interface-name": [
             true,

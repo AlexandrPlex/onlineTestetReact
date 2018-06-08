@@ -7,8 +7,8 @@ import {appStore} from './Store/Store';
 import App from './App/App'
 
 ReactDOM.render(
-  <Provider store={appStore}>
-  	<App/>
-  </Provider>,
-  document.getElementById('app')
+<Provider store={appStore}>
+	<App/>
+</Provider>,
+document.getElementById('app')
 );

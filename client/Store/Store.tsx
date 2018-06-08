@@ -13,9 +13,9 @@ export interface IStoreState {
 
 const initialState = {
   get state(): IStoreState {
-    return {
+	return {
 
-    }
+	}
   }
 }
 
