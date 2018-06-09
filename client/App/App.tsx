@@ -2,7 +2,7 @@ import * as React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 //Собственные компоненты
-import LoginComponent from './Components/LoginComponent/LoginComponent';
+import {LoginComponent} from './Components/LoginComponent/LoginComponent';
 
 class App extends React.Component {
 	render() {

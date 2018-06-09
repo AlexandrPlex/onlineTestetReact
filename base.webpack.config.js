@@ -32,7 +32,12 @@ module.exports = {
                  { loader: "style-loader" },
                  { loader: "css-loader" }
             ]
-      }]
+      },{
+            test: /\.json$/,
+            use: [
+                { loader: "raw-loader" }
+            ]
+        }]
     },
     resolve: {
         extensions: [".tsx", ".ts", ".js"]

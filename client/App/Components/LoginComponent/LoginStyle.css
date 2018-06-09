@@ -13,8 +13,8 @@
 
 html,body{
     height: 100%;
-    background: linear-gradient(30grad , #26d01d ,
-                                         #2cbbab ) no-repeat;
+    background: linear-gradient(30grad , #919281,
+    #d9dbdb) no-repeat;
 }
 .container-login * {
     margin: auto;
@@ -64,5 +64,7 @@ html,body{
     background: rgba(255, 255, 255, 0.7);
     transition: all 0.7s ease-out;
     border-radius: 5px;
-
+}
+.login-input-error{
+    border: 4px solid red;
 }
