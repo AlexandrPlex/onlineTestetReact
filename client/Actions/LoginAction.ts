@@ -11,12 +11,8 @@ export class LoginActions {
 	}
 	onHandelAuthentication = (login: string, password: string) => {
 		this.dispatch({type: `${ILoginActionTypes.AUTH}${IAsyncLoginActionTypes.BEGIN}`});
-		authenticationRequest(login, password)
-	};
-	onChengeEditLoginValueIsEmpty = (value: boolean) => {
-		this.dispatch({type: `${ILoginActionTypes.CHANGE_LOGIN_VALUE}`, payload: value})
-	};
-	onChengeEditPasswordValueIsEmpty = (value: boolean) => {
-		this.dispatch({type: `${ILoginActionTypes.CHANGE_PASSWORD_VALUE}`, payload: value})
+		return new Promise(()=>{
+			authenticationRequest(login, password)
+		});
 	};
 }

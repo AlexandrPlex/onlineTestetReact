@@ -6,29 +6,25 @@ export interface IActionType extends Action {
 	payload: any;
 }
 
-export interface IStoreState {
+export interface ILoginStoreState {
 	loginState: boolean;
 	loadingState: boolean;
 	serverConnect: boolean;
 	dataAuthError: boolean;
-	editLoginIsEmpty: boolean;
-	editPasswordIsEmpty: boolean;
 }
 
 const initialState = {
-	get state(): IStoreState {
+	get state(): ILoginStoreState {
 		return {
 			loginState: false,
 			loadingState: false,
 			serverConnect: true,
 			dataAuthError: true,
-			editLoginIsEmpty: true,
-			editPasswordIsEmpty: true,
 		}
 	}
 }
 
-export default function loginReducer (state: IStoreState = initialState.state, action: IActionType) {
+export default function loginReducer (state: ILoginStoreState = initialState.state, action: IActionType) {
 	switch (action.type) {
 		case `${ILoginActionTypes.AUTH}${IAsyncLoginActionTypes.BEGIN}`:
 			return {
@@ -41,16 +37,6 @@ export default function loginReducer (state: IStoreState = initialState.state, a
 		case `${ILoginActionTypes.AUTH}${IAsyncLoginActionTypes.FAILURE}`:
 			return {
 				...state,
-			};
-		case `${ILoginActionTypes.CHANGE_LOGIN_VALUE}`:
-			return {
-				...state,
-				editLoginIsEmpty: action.payload
-			};
-		case `${ILoginActionTypes.CHANGE_PASSWORD_VALUE}`:
-			return {
-				...state,
-				editPasswordIsEmpty: action.payload
 			};
 	}
 	return state;

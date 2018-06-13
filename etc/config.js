@@ -3,11 +3,16 @@ export default {
     "secret": "apm3QvabC%ss50VZm0dTf9LaY~5EZT",
     "serverPort": "8080",
     "db":{
-        "name": "users",
+        "name": "root",
+        "password": "usbw",
         "host": "localhost",
-        "port": 27017
+        "port": 3307,
+        "database": "onlinetester"
     },
     "rootRoutes":{
         "auth": "auth"
+    },
+    "db_table":{
+        "users": "users"
     }
 }
